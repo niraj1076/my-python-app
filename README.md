@@ -4,13 +4,13 @@
 This project demonstrates how to create a simple Python application, containerize it using Docker, build an image, and push it to a **private Docker Hub repository**.
 
 Project Structure
-
+```
 my-python-app/
 ├── app.py
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
-
+```
 ## 🧾 Prerequisites
 
 - EC2 server
