@@ -1,7 +1,7 @@
 
-# 🚀 Dockerized python app
+# 🚀 Python App with Docker and Push it to Dockerhub Private Repository
 
-This is a python app that run in docker conatiner. It uses flask to create a basic web server.
+This project demonstrates how to create a simple Python application, containerize it using Docker, build an image, and push it to a **private Docker Hub repository**.
 
 Project Structure
 
@@ -11,7 +11,6 @@ my-python-app/
 ├── Dockerfile
 └── README.md
 
-
 ## 🧾 Prerequisites
 
 - EC2 server
@@ -19,7 +18,39 @@ my-python-app/
 - Git installed
 - A GitHub account
 
-## 🛠️ Dockerfile
+## 🧠 About the Application
+
+This is a basic Flask web app with two routes:
+
+- `/` → Returns: `Python App Hosting jhala`
+- `/hi` → Returns: an HTML greeting page
+
+---
+
+## 🧱 Step 1: Create Your Python Application
+
+### 🔸 `app.py`
+
+```python
+from flask import Flask
+import os
+app = Flask(__name__)
+
+@app.route('/')
+def hello_geek():
+    return 'Python App Hosting jhala'
+
+@app.route('/hi')
+def hell():
+    return '<h1>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii from Flask & Docker</h1>'
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
+```
+
+
+## 🛠️ Dockerfile - Use the file provide.
 
 
 ## To build the image from the docker file 
