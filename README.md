@@ -49,8 +49,19 @@ if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=port)
 ```
 
+## Step 2: Requirements File
+### 'requirements.txt'
 
-## 🛠️ Dockerfile - Use the file provide.
+click==8.0.3
+colorama==0.4.4
+Flask==2.0.2
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+Werkzeug==2.0.2
+gunicorn==20.1.0
+
+## 🛠️ Dockerfile - 
 
 
 ## To build the image from the docker file 
