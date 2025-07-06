@@ -21,18 +21,10 @@ my-python-app/
 ## 🛠️ Dockerfile
 
 
-FROM python
-WORKDIR /app
-COPY ./requirements.txt /app/requirements.txt
-COPY ./app.py /app/app.py
-RUN pip install -r requirements.txt
-COPY . /app
-EXPOSE 5000
-ENTRYPOINT ["python"]
-CMD ["app.py"]
-
 ## To build the image from the docker file 
 
-	- docker build -t <give-image-name> my-python-app .
+	- docker build -t niraj1076/my-images my-python-app .
+	# Here i have used the my docker hub repo-name  
 ![build-python](https://github.com/user-attachments/assets/61b1ca85-c92c-4189-b5b0-43e101f14bd6)
+
 
