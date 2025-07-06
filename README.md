@@ -103,4 +103,24 @@ CMD ["app.py"]
 
 ![push](https://github.com/user-attachments/assets/ccd26c36-0125-43a8-b626-f09313797304)
 
+## Step 8: Run the Container (Test Locally)
+
+- docker run -d -p 5000:5000 your-username/flask-app
+	Then open:
+
+	- http://localhost:5000 → Route /
+
+	- http://localhost:5000/hi → Route /hi
+
+## Optional Cleanup
+
+- docker stop $(docker ps -q)
+- docker rm $(docker ps -aq)
+- docker image prune -f
+
+## 📝 Author
+GitHub: niraj1076
+
+Docker Hub: niraj1076
+
 
