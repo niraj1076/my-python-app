@@ -24,7 +24,7 @@ my-python-app/
 ## To build the image from the docker file 
 
 	- docker build -t niraj1076/my-images my-python-app .
-	# Here i have used the my docker hub repo-name  
+	# Here i have used the my docker hub repo-name so i don't need to tag image later. 
 ![build-python](https://github.com/user-attachments/assets/61b1ca85-c92c-4189-b5b0-43e101f14bd6)
 
 
