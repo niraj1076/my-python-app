@@ -34,4 +34,5 @@ CMD ["app.py"]
 ## To build the image from the docker file 
 
 	- docker build -t <give-image-name> my-python-app .
+![build-python](https://github.com/user-attachments/assets/61b1ca85-c92c-4189-b5b0-43e101f14bd6)
 
